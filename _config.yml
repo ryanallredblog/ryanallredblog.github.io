@@ -1,11 +1,11 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
-url: "http://www.jacoporabolini.com/emerald"
+title: Lambda Chops - Data Science Tutorials
+description: "Lambda Chops is a Data Science blog focusing on teaching the basics for getting started with Python, Data Science, and Machine Learning."
+url: "lambdachops.com/"
 author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+  name: "Ryan Allred"
+  email: ""
+  url: "http://ryanleeallred.com"
 
 # Build settings
 baseurl: /emerald # Change this to your relative path (ex: /blog/), or leave just a /
