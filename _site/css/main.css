@@ -25,11 +25,11 @@ html {
 
 /*- Link -*/
 a {
-  color: #008A3C;
+  color: #1273bc;
   text-decoration: none;
   font-weight: 700; }
   a:hover, a:focus {
-    color: #007131; }
+    color: #1065a5; }
 
 /*- Typography -*/
 body {
@@ -148,14 +148,14 @@ html, body {
     #nav a, #nav-left a {
       font-size: 1em; } }
   #nav a:hover, #nav-left a:hover {
-    background-color: #00a447; }
+    background-color: #1481d3; }
 #nav span, #nav-left span {
   font-weight: 200; }
 
 #nav {
   width: 14rem;
   position: fixed;
-  background-color: #008A3C;
+  background-color: #1273bc;
   top: 0;
   bottom: 0;
   right: -14rem;
@@ -172,7 +172,7 @@ html, body {
 #nav-left {
   width: 14rem;
   position: fixed;
-  background-color: #008A3C;
+  background-color: #1273bc;
   top: 0;
   bottom: 0;
   left: -14rem;
@@ -378,10 +378,10 @@ code {
     background-color: #f0f0f0;
     color: #222222; }
   .pagination a:hover {
-    background-color: #00a447; }
+    background-color: #1481d3; }
 
 .page-item {
-  background-color: #008A3C;
+  background-color: #1273bc;
   color: #FDFDFD;
   padding: 4px 8px;
   font-weight: 400;
@@ -393,7 +393,7 @@ code {
 
 /* Footer */
 footer {
-  background-color: #008A3C;
+  background-color: #1273bc;
   color: #FDFDFD;
   text-align: center;
   padding: 0.6667em 0; }
@@ -405,7 +405,7 @@ footer {
 
 .footer {
   padding: 25px 0;
-  background-color: #008A3C;
+  background-color: #1273bc;
   color: #FDFDFD;
   text-align: center;
   position: absolute;
@@ -672,3 +672,5 @@ footer {
 
 /* Literal.Number.Integer.Long */
 /*- Custom style -*/
+#header {
+  font-family: 'Source Sans Pro', sans-serif; }

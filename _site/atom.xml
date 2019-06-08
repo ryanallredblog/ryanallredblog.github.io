@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Emerald | A simple Jekyll blog</title>
+ <title>Lambda Chops - Data Science Tutorials</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2019-06-08T16:14:49-06:00</updated>
+ <updated>2019-06-08T17:33:09-06:00</updated>
  <author>
-   <name>Jacopo Rabolini</name>
-   <uri>http://www.jacoporabolini.com</uri>
-   <email>hello@jacoporabolini.com</email>
+   <name>Ryan Allred</name>
+   <uri>http://ryanleeallred.com</uri>
+   <email></email>
  </author>
 
  
 
  <entry>
-   <title>Typograhy example</title>
-   <link href="http://localhost:4000/typography"/>
-   <id>http://localhost:4000/typography</id>
-   <updated>2015-03-19T00:00:00-06:00</updated>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/emerald/img/img-test.png&quot; alt=&quot;Test&quot; title=&quot;Test&quot; /&gt; Lorem ipsum dolor sit amet, &lt;a href=&quot;http://www.example.com&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet...</content>
- </entry>
-
- 
-
- <entry>
-   <title>Code Syntax</title>
-   <link href="http://localhost:4000/code-syntax"/>
-   <id>http://localhost:4000/code-syntax</id>
-   <updated>2015-03-01T00:00:00-07:00</updated>
-   <content type="html">&lt;p&gt;To insert highlight code inside of a post, it’s enough to use some specific tags, has directly described into the &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;Jekyll documentation&lt;/a&gt;. In this way the code will be included into a &lt;code class=&quot;highlighter-rouge&quot;&gt;.highlight&lt;/code&gt; CSS class and will be highlight according to the &lt;a href=&quot;https://github.com/mojombo/tpw/blob/master/css/syntax.css&quot;&gt;syntax.scss&lt;/a&gt; file. This is the...</content>
+   <title>Pandas Display Options</title>
+   <link href="http://localhost:4000/pandas-display-options"/>
+   <id>http://localhost:4000/pandas-display-options</id>
+   <updated>2019-06-08T00:00:00-06:00</updated>
+   <content type="html">&lt;h2 id=&quot;import-pandas&quot;&gt;Import Pandas&lt;/h2&gt; &lt;h3 id=&quot;these-are-pandas-settings-after-all&quot;&gt;These are Pandas settings after all…&lt;/h3&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;h2 id=&quot;first-lets-look-at-the-default-display-options&quot;&gt;First, let’s look at the default display options:&lt;/h2&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Maximum Number of Rows:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span...</content>
  </entry>
 
  
