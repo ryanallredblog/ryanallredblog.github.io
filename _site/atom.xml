@@ -4,7 +4,7 @@
  <title>Lambda Chops - Data Science Tutorials</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2019-06-15T00:39:38-06:00</updated>
+ <updated>2019-06-15T00:56:05-06:00</updated>
  <author>
    <name>Ryan Allred</name>
    <uri>http://ryanleeallred.com</uri>
@@ -14,10 +14,20 @@
  
 
  <entry>
+   <title>Start Writing Python With Google Colab</title>
+   <link href="http://localhost:4000/start-writing-python-with-google-colab"/>
+   <id>http://localhost:4000/start-writing-python-with-google-colab</id>
+   <updated>2019-06-14T00:00:00-06:00</updated>
+   <content type="html">&lt;h1 id=&quot;start-writing-python-with-google-colaboratory&quot;&gt;Start Writing Python with Google Colaboratory&lt;/h1&gt; &lt;p&gt;You can get started writing Python right this minute without installing any tools or doing any setup. All that you need is a Google Account. Just go to &lt;a href=&quot;http://colab.research.google.com&quot;&gt;colab.research.google.com&lt;/a&gt; and login with your Google Account.&lt;/p&gt; &lt;h2 id=&quot;what-is-google-colaboratory&quot;&gt;What is Google Colaboratory?&lt;/h2&gt; &lt;p&gt;Google Colaboratory...</content>
+ </entry>
+
+ 
+
+ <entry>
    <title>Why Learn Python?</title>
    <link href="http://localhost:4000/why-learn-python"/>
    <id>http://localhost:4000/why-learn-python</id>
-   <updated>2019-06-14T00:00:00-06:00</updated>
+   <updated>2019-06-11T00:00:00-06:00</updated>
    <content type="html">&lt;h2 id=&quot;its-popular-and-easy-to-learn&quot;&gt;It’s popular and easy to learn&lt;/h2&gt; &lt;p&gt;Python is one of the world’s most popular programming languages, yet its straightforward syntax makes it the most approachable professional programming language for beginners.&lt;/p&gt; &lt;h2 id=&quot;python-libraries-give-you-super-powers&quot;&gt;Python libraries give you super powers&lt;/h2&gt; &lt;p&gt;Part of python’s appeal is its strong community that maintains a vast...</content>
  </entry>
 
