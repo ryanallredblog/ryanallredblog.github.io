@@ -6,3 +6,28 @@
 #header h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
+footer {
+
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: #89adc6;
+	}
+
+	.footer-social {
+		margin-bottom: 0px;
+	}
+	
+	li {
+		display: inline-block;
+		font-size: 40px;
+		margin: 0 5px;
+		margin-top: 10px;
+
+	}
+}
+
+

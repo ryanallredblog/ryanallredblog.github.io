@@ -674,3 +674,15 @@ footer {
 /*- Custom style -*/
 #header h1 {
   font-family: 'Source Sans Pro', sans-serif; }
+
+footer a {
+  color: white; }
+footer a:hover {
+  color: #89adc6; }
+footer .footer-social {
+  margin-bottom: 0px; }
+footer li {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0 5px;
+  margin-top: 10px; }
