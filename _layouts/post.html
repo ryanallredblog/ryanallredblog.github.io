@@ -2,7 +2,12 @@
 layout: default
 ---
 <article id="post-page">
-	<h2>{{ page.title }}</h2>		
+	<h2>{{ page.title }}</h2>	
+	<small>
+	    {% for tag in page.tags %}
+	    Tags: <a href="/tags/{{ tag }}/">{{ tag | capitalize }}</a>
+	    {% endfor %}
+	</small>	
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
 	<div class="content">
 
