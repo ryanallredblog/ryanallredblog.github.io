@@ -1,5 +1,7 @@
 ---
 title: Pandas Display Options
+description: Pandas Diplay Options allow you to control how many rows, columns, and characters are displayed in the output of a jupyter notebook. They are particularly useful for controlling viewing all of the rows or columns of a dataframe without them being truncated by an elipses. 
+tags: pandas
 ---
 
 ## Import Pandas

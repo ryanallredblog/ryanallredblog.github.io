@@ -1,5 +1,7 @@
 ---
 title: Start Writing Python with Google Colaboratory
+description: Google Colaboratory is a tool that enables you to start writing python code with zero setup or tooling. Just add some text to a code cell and hit run. It also has all of the collaborative and sharing benefits of a Google Doc!
+tags: python
 ---
 
 # Start Writing Python with Google Colaboratory

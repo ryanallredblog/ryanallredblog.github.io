@@ -1,5 +1,7 @@
 ---
 title: Why Learn Python?
+description: You should learn python because it is a very popular, easy to learn, well supported, flexible, empowering, math friendly, hardware enabled, machine learning fueling professional programming language.
+tags: python
 ---
 
 ## It's popular and easy to learn
