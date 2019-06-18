@@ -4,8 +4,6 @@ description: Google Colaboratory is a tool that enables you to start writing pyt
 tags: python
 ---
 
-# Start Writing Python with Google Colaboratory
-
 You can get started writing Python right this minute without installing any tools or doing any setup. All that you need is a Google Account. Just go to [colab.research.google.com](http://colab.research.google.com) and login with your Google Account.
 
 ## What is Google Colaboratory?

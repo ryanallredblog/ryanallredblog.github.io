@@ -675,6 +675,22 @@ footer {
 #header h1 {
   font-family: 'Source Sans Pro', sans-serif; }
 
+#container {
+  margin-bottom: 100px;
+  max-width: 70%; }
+  #container div {
+    overflow-x: scroll; }
+  #container table {
+    margin-top: 20px; }
+  #container table, #container tr, #container td, #container th {
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px; }
+    #container table tr:nth-child(even), #container tr tr:nth-child(even), #container td tr:nth-child(even), #container th tr:nth-child(even) {
+      background-color: #eaeaea; }
+  #container th {
+    background-color: #a0a0a0; }
+
 footer a {
   color: white; }
 footer a:hover {
@@ -686,3 +702,34 @@ footer li {
   font-size: 40px;
   margin: 0 5px;
   margin-top: 10px; }
+
+.language-python {
+  background-color: #303030;
+  padding: 5px 10px;
+  overflow-x: scroll;
+  margin-top: 20px; }
+  .language-python pre {
+    margin: 0px; }
+  .language-python code {
+    background-color: #303030; }
+    .language-python code span {
+      color: white; }
+    .language-python code .nn {
+      color: #EE3B59; }
+    .language-python code .c1 {
+      color: #7f7f7f; }
+    .language-python code .o {
+      color: #EE3A59; }
+    .language-python code .s {
+      color: #EFCA58; }
+    .language-python code .k {
+      color: #46B29E; }
+
+.highlighter-rouge div pre code :not(.language-python) {
+  background-color: #303030; }
+
+code {
+  background-color: #dddddd;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 5px; }

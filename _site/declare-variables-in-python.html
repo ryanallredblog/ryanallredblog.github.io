@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>Declare Variables in Python</title>
+
+	<!-- CSS & fonts -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
+
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142178312-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-142178312-1');
+	</script>
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="https://github.com/ryanallredblog/ryanallredblog.github.io">Github</a>
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	<a href="/">Lambda Chops - 2019</a>
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header">
+	<a href="/">
+	  <h1>Lambda Chops - Data Science Tutorials</h1>
+	</a>
+</header>
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<article id="post-page">
+	<h1>Declare Variables in Python</h1>	
+	<small>
+	    
+	    Tags: <a href="/tags/python/">Python</a>
+	    
+	</small>	
+	<time datetime="2019-06-17T00:00:00-06:00" class="by-line">17 Jun 2019</time>
+	<div class="content">
+
+		<p>A variable is unique identifier that is used to retrieve a piece of data that is stored in the computer’s memory. To keep things simple, we’ll start off by talking about the three most common types of data that can be stored in a variable in Python:</p>
+
+<ul>
+  <li>Integers (whole numbers positive, negative, or zero)</li>
+  <li>Floats (numbers with decimals)</li>
+  <li>Strings (sequences of characters i.e. text)</li>
+</ul>
+
+<p>In order to assign a value to a variable in Python we first type the variable name, then the <code class="highlighter-rouge">=</code> (equals sign -also known as the “assignment operator”) and then the value that we want assigned to that variable -and that’s it! Python will automatically allocate the memory and store the value in the computer under the designated variable name.</p>
+
+<h2 id="create-a-variable-and-assign-a-value-to-it">Create a variable and assign a value to it</h2>
+
+<h3 id="integers">Integers:</h3>
+
+<p>Let’s create a variable and call it “my_variable” and assign the integer 5 to it.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># declare the variable "my_variable" and assign the integer 5 to it.
+</span><span class="n">my_variable</span> <span class="o">=</span> <span class="mi">5</span>
+</code></pre></div></div>
+
+<p>If we want to see the value that has been saved under a specific variable name we can use the print statement to output the variable’s value.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<p>Google Colab and other applications for running Jupyter Notebooks will also show a variable’s value in the cell’s output even if the print statement is not included.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_variable</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<h3 id="floats">Floats:</h3>
+
+<p>Now lets try and save a float to a variable. A float is just a number that includes a decimal representation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># declare a float variable and a string variable
+</span><span class="n">my_float</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_float</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.5
+</code></pre></div></div>
+
+<h3 id="strings">Strings:</h3>
+
+<p>Strings are sequences of characters that are wrapped in quotation marks. <code class="highlighter-rouge">""</code> or <code class="highlighter-rouge">''</code>. You can use either double or single quotes as long as they match on either end of the string. Lets create a new variable called <code class="highlighter-rouge">hello_message</code> and save the string <code class="highlighter-rouge">"Hello World!"</code> to it and then we’ll print it out.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hello_message</span> <span class="o">=</span> <span class="s">"Hello World!"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hello_message</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello World!
+</code></pre></div></div>
+
+<p>That’s all there is to it! You now know how to:</p>
+<ul>
+  <li>declare a new variable in python</li>
+  <li>save one of three common types of data to that variable (integers, floats, and strings)</li>
+  <li>print out a variable to see its value outputted</li>
+</ul>
+
+		
+	</div>
+</article>
+
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer class="footer">
+	<span><a href="/">LambdaChops.com</a></span>
+	<ul class="footer-social">
+		<li><a href="https://twitter.com/ryanallred"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/ryan-allred-2150bb13/"><i class="fa fa-linkedin-square"></i></a></li>
+		<li><a href="http://lambdachops.com/atom.xml"><i class="fa fa-rss-square"></i></a></li>
+		<li><a href="http://github.com/ryanleeallred"><i class="fa fa-github-square"></i></a></li>
+	</ul>
+</footer>
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>

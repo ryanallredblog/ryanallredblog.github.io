@@ -7,6 +7,30 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+#container {
+	margin-bottom: 100px;
+	max-width: 70%;
+
+	div {
+		overflow-x: scroll;
+	}
+
+	table {
+		margin-top: 20px;
+	}
+
+	table, tr, td, th {
+		border: none;
+		tr:nth-child(even) {background-color: #eaeaea;}
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	th {
+		background-color: #a0a0a0
+	}
+}
+
 footer {
 
 	a {
@@ -29,5 +53,62 @@ footer {
 
 	}
 }
+
+.language-python {
+	background-color: #303030;
+	padding: 5px 10px;
+	overflow-x: scroll;
+	margin-top: 20px;
+
+	pre {
+		margin: 0px;
+	}
+
+	code {
+		background-color: #303030;
+
+		span {
+			color: white;
+		}
+		.nn {
+			color: #EE3B59;
+		}
+
+		.c1 {
+			color: #7f7f7f;
+		}
+
+		.o {
+			color: #EE3A59;
+		}
+
+		.s {
+			color: #EFCA58;
+		}
+
+		.k {
+			color: #46B29E;
+		}
+	}
+}
+
+// :not(.language-python) .highlighter-rouge div pre code {
+// 	background-color: #dddddd;
+// }
+
+.highlighter-rouge div pre code :not(.language-python) {
+	background-color: #303030;
+}
+
+code {
+	background-color: #dddddd;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 5px;
+}
+
+
+
+
 
 
