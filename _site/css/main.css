@@ -733,3 +733,7 @@ code {
   padding-left: 6px;
   padding-right: 6px;
   border-radius: 5px; }
+
+@media only screen and (max-width: 800px) {
+  #container {
+    max-width: 100%; } }
