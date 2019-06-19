@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>Math with Python</title>
+
+	<!-- CSS & fonts -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
+
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142178312-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-142178312-1');
+	</script>
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="https://github.com/ryanallredblog/ryanallredblog.github.io">Github</a>
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	<a href="/">Lambda Chops - 2019</a>
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header">
+	<a href="/">
+	  <h1>Lambda Chops - Data Science Tutorials</h1>
+	</a>
+</header>
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<article id="post-page">
+	<h1>Math with Python</h1>	
+	<small>
+	    
+	    Tags: <a href="/tags/python/">Python</a>
+	    
+	</small>	
+	<time datetime="2019-06-19T00:00:00-06:00" class="by-line">19 Jun 2019</time>
+	<div class="content">
+
+		<p>Python is an excellent language choice for doing math calculations. This is why popular scientific computing libraries such as NumPy and SciPy are written in Python. However, there’s a lot you can do with the Python Standard Library. Lets look at some of the basic mathematical operators that exist in Python.</p>
+
+<h2 id="mathematical-operators">Mathematical Operators</h2>
+
+<p>An operator is a symbol that indicates a specific operation. For example, the <code class="highlighter-rouge">+</code> sign indicates addition. Lets look at the most common operators that are used to do math in python.</p>
+
+<h3 id="addition-operator">Addition Operator</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># We'll create some variables to do math with their values
+# This is to show that we can use the operators on raw values
+# or between variables
+</span>
+<span class="n">five</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">two</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">+</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7
+</code></pre></div></div>
+
+<h3 id="subtraction-operator">Subtraction Operator</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">-</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">-</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+</code></pre></div></div>
+
+<h3 id="multiplication-operator">Multiplication Operator</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">*</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+</code></pre></div></div>
+
+<h3 id="division-operator">Division Operator</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.5
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">/</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.5
+</code></pre></div></div>
+
+<h3 id="floor-division-operator-integer-division">Floor Division Operator (integer division)</h3>
+
+<p>Floor division computes division and if there is any decimal portion included with the result, the result will be rounded down to the nearest whole number. This is sometimes useful for translating floating point values into integer values and for this reason this operation is also called “integer division.”</p>
+
+<p>Let’s ompare the result of the regular division operator with the integer division operator.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.5
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<p>Rounding a float down to the nearest whole number is also referred to as “flooring” a number.</p>
+
+<p>It’s important to note that the types of values that result from these two operations are different. The division operator will always result in a float whereas the floor division operator results in an integer. you can use the <code class="highlighter-rouge">type()</code> function to check the variable type of any value.</p>
+
+<p>When we change a variable from one type to another this is called “casting.” In this case, we are casting a float to an integer.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>float
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mi">5</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">division_result</span> <span class="o">=</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">floor_division_result</span> <span class="o">=</span> <span class="mi">5</span><span class="o">//</span><span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">division_result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>float
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">floor_division_result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int
+</code></pre></div></div>
+
+<h3 id="exponent-operator">Exponent Operator</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>25
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">**</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>25
+</code></pre></div></div>
+
+<h3 id="modulus-remainder-operator">Modulus (remainder) Operator</h3>
+
+<p>The modulus (or modulo) operator is represented by the percent sign <code class="highlighter-rouge">%</code>. It reports back the remainder after division between two numbers. At first this may not seem like a very useful operation, but is extremely useful in a variety of settings in computer programming. Think about if you wanted to apply some operation every other time or every fifth time. The modulo operator makes performing operations like this extremely easy.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">five</span> <span class="o">%</span> <span class="n">two</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<h2 id="controlling-order-of-operations-with-parenthesis--">Controlling Order of Operations with Parenthesis <code class="highlighter-rouge">( )</code></h2>
+
+<p>No discussion of mathematical operators would be complete without mentioning how Python handles order of operations when calculations are performed. You’ll find that the order of operations that Python uses is similar to what you have been taught in traditional math classes. If you want to ensure that operations are calculated in a specific order then you’ll need to wrap those operations in parenthesis in order to ensure that happens.</p>
+
+<p>The order of operations is typically as follows:</p>
+
+<ul>
+  <li>Parenthesis</li>
+  <li>Exponents</li>
+  <li>Multiplication &amp; Division</li>
+  <li>Addition &amp; Subtraction</li>
+</ul>
+
+<p>Notice how much differently the results following calculations are depending on the placement of parenthesis.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 4**2 = 16 
+# 3 / 16 = .1875
+# 5 + .1875 = 5.1875
+</span>
+<span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5.1875
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 5 + 3 = 8
+# 4 ** 2 = 16
+# 8 / 16 = 0.5
+</span>
+<span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">4</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.5
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 5 + 3 = 8
+# 8 / 4 = 2.0
+# 2.0 ** 2 = 4.0
+</span>
+<span class="p">(((</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4.0
+</code></pre></div></div>
+
+
+		
+	</div>
+</article>
+
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer class="footer">
+	<span><a href="/">LambdaChops.com</a></span>
+	<ul class="footer-social">
+		<li><a href="https://twitter.com/ryanallred"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/ryan-allred-2150bb13/"><i class="fa fa-linkedin-square"></i></a></li>
+		<li><a href="http://lambdachops.com/atom.xml"><i class="fa fa-rss-square"></i></a></li>
+		<li><a href="http://github.com/ryanleeallred"><i class="fa fa-github-square"></i></a></li>
+	</ul>
+</footer>
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>

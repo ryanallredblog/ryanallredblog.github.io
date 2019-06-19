@@ -4,12 +4,22 @@
  <title>Lambda Chops - Data Science Tutorials</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2019-06-18T17:05:32-06:00</updated>
+ <updated>2019-06-19T14:27:17-06:00</updated>
  <author>
    <name>Ryan Allred</name>
    <uri>http://ryanleeallred.com</uri>
    <email></email>
  </author>
+
+ 
+
+ <entry>
+   <title>Math with Python</title>
+   <link href="http://localhost:4000/math-with-python"/>
+   <id>http://localhost:4000/math-with-python</id>
+   <updated>2019-06-19T00:00:00-06:00</updated>
+   <content type="html">&lt;p&gt;Python is an excellent language choice for doing math calculations. This is why popular scientific computing libraries such as NumPy and SciPy are written in Python. However, there’s a lot you can do with the Python Standard Library. Lets look at some of the basic mathematical operators that exist in...</content>
+ </entry>
 
  
 
