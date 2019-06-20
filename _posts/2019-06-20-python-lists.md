@@ -1,3 +1,9 @@
+---
+title: Python Lists and List Methods
+description: This post covers creating python lists and list methods such as append, insert, pop, contains, remove, sort, and the length function -- len() 
+tags: python
+---
+
 
 In previous posts we have talked about three specific variable types: Integers, Floats and Strings. In this post we will introduce `Lists`. A list is an ordered container that can hold multiple pieces of information. 
 
