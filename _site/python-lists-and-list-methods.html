@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>Python Lists and List Methods</title>
+
+	<!-- CSS & fonts -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
+
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142178312-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-142178312-1');
+	</script>
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="/tags/python">Python</a>
+<a href="/tags/pandas">Pandas</a>
+<!-- <a href="/">Deep Learning</a> -->
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	<a href="/">Lambda Chops - 2019</a>
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header">
+	<a href="/"><h1>Lambda Chops</h1></a>
+	<!-- Begin Mailchimp Signup Form -->
+		<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+		<div id="mc_embed_signup">
+		<form action="https://gmail.us3.list-manage.com/subscribe/post?u=d385ef6b6f5284abb836e7cec&amp;id=f3c813e265" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL">Subscribe For New Posts</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d385ef6b6f5284abb836e7cec_f3c813e265" tabindex="-1" value=""></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+		</div>
+	<!--End mc_embed_signup-->
+</header>
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<article id="post-page">
+	<h1>Python Lists and List Methods</h1>	
+	<small>
+	    
+	    Tags: <a href="/tags/python/">Python</a>
+	    
+	</small>	
+	<time datetime="2019-06-20T00:00:00-06:00" class="by-line">20 Jun 2019</time>
+	<div class="content">
+
+		<p>In previous posts we have talked about three specific variable types: Integers, Floats and Strings. In this post we will introduce <code class="highlighter-rouge">Lists</code>. A list is an ordered container that can hold multiple pieces of information.</p>
+
+<h2 id="an-example-list-to-work-with">An example list to work with:</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="s">"this is a string"</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>The items that we want our list to hold for us are wrapped by square brackets <code class="highlighter-rouge">[ ]</code> and each item in the list is separated by commas <code class="highlighter-rouge">,</code> in order to designate where one item starts and the other ends. Once we have created our list we will save it to a variable using the assignment operator <code class="highlighter-rouge">=</code>. In this case we have called the variable <code class="highlighter-rouge">my_list</code>.</p>
+
+<h2 id="printing-out-a-list-stored-in-a-variable">Printing out a list stored in a variable</h2>
+
+<p>We can retrieve our list from the computer’s memory in the same way that we would retrieve any other variable: We can use the print statement, or let our notebook output the contents of the variable for us.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 2.7, 'this is a string', -400]
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 2.7, 'this is a string', -400]
+</code></pre></div></div>
+
+<h2 id="accessing-specific-items-in-a-list">Accessing specific items in a list</h2>
+
+<p>One of the most powerful aspects of lists is that they are <strong>ordered</strong> meaning that the list keeps track of which item comes first, second, third, etc. This means that we can access specific items in the list based on its position <em>in</em> the list. We’ll access the first item in the list below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'cat'
+</code></pre></div></div>
+
+<p>We can access any item within a list by putting square brackets to the right side of the variable that the list is saved to and then “passing in” the index (position) of the item that we want to access.</p>
+
+<p><strong>NOTE:</strong> As is the case with many programming languages, index locations are slightly different from our typical counting numbers in that they start at 0 and go up from there instead of starting at 1. This means that if I want to grab the first element in the list I will pass in a 0. I will pass in a 1 to get the second element, a 2 for the third element, and so on.</p>
+
+<p>What would I need to write in order to access the <code class="highlighter-rouge">"this is a string"</code> item inside of <code class="highlighter-rouge">my_list</code>?</p>
+
+<p><code class="highlighter-rouge">"this is a string"</code> is the fourth element in the list therefore I will pass in its index location of 3 in order to access that item.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'this is a string'
+</code></pre></div></div>
+
+<h2 id="adding-items-to-the-end-of-a-list">Adding items to the end of a list</h2>
+
+<p>Many Python variable types have built-in functions that we can access in order do things with them. Lists are no exception.</p>
+
+<p>If I want to add an item to a list, I can use the <code class="highlighter-rouge">.append()</code> method. Since all lists come with this functionality, I can call this method directly on the variable that I stored my list in and use it to manipulate the underlying container.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"New Item"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 2.7, 'this is a string', -400, 'New Item']
+</code></pre></div></div>
+
+<p>By calling the .append() function on the list and passing the item that we wanted to add to the list inside of the parenthesis, we were able to add the string <code class="highlighter-rouge">'New Item'</code>.</p>
+
+<h2 id="adding-items-to-a-list-at-a-specific-index">Adding items to a list at a specific index</h2>
+
+<p>Another method that exists on list objects is the <code class="highlighter-rouge">.insert()</code> method that we can use in order to insert new items into the list at a specific location.</p>
+
+<p>Lets add the string <code class="highlighter-rouge">"Newer Item"</code> to <code class="highlighter-rouge">my_list</code>. We can do this by passing in two parameters to the <code class="highlighter-rouge">.insert()</code> function, the first parameter that we need to provide is the index location where we want the new item to be located at. The second parameter is the item that we want to pass in. Lets add the string <code class="highlighter-rouge">"Newer Item"</code> at the index position <code class="highlighter-rouge">3</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"Newer Item"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 2.7, 'Newer Item', 'this is a string', -400, 'New Item']
+</code></pre></div></div>
+
+<p>We can access the item that we just inserted into the list at the same index position that we used to insert it <em>into</em> the list.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'Newer Item'
+</code></pre></div></div>
+
+<h2 id="remove-the-first-instance-of-an-item-from-a-list">Remove the first instance of an item from a list</h2>
+
+<p>We can use the <code class="highlighter-rouge">.remove()</code> function to remove an item from a list. The remove function will look through the list from left to right and remove the first instance of the item that it is looking for from the list.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mf">2.7</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 'Newer Item', 'this is a string', -400, 'New Item']
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">.remove()</code> function will return an error if the item that it is looking for doesn not exist in the list. For example, if I try and remove the integer <code class="highlighter-rouge">10</code> the <code class="highlighter-rouge">.remove()</code> function will throw an error because that item is not in our list.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+&lt;ipython-input-25-4cc6fa43bfde&gt; in &lt;module&gt;
+----&gt; 1 my_list.remove(10)
+
+
+ValueError: list.remove(x): x not in list
+</code></pre></div></div>
+
+<h2 id="remove-an-item-at-a-specific-index-location-from-a-list">Remove an item at a specific index location from a list</h2>
+
+<p>We can use the <code class="highlighter-rouge">.pop()</code> function to remove an item at a specific location from our list. We only need to pass the <code class="highlighter-rouge">.pop()</code> function a single parameter -the index location of the item that we want to remove. Lets remove the integer -400 that is in index position <code class="highlighter-rouge">4</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-400
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['cat', 5, 'Newer Item', 'this is a string', 'New Item']
+</code></pre></div></div>
+
+<h2 id="create-a-new-list-by-saving-an-empty-list-to-a-variable">Create a new list by saving an empty list to a variable</h2>
+
+<p>Sometimes we won’t know what we will want to put in our list right when we know that we’re going to need one. We can save a blank list to a variable and then items after the fact if we want.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[]
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">new_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[5, 2, 8, 3, 1, 4, 9, 6, 10, 7]
+</code></pre></div></div>
+
+<h2 id="sort-the-items-in-a-list">Sort the items in a list</h2>
+
+<p>We have added the numbers 1-10 to our list. But they’re all out of order. We can use the <code class="highlighter-rouge">sort()</code> method to put them in ascending order.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">new_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre></div></div>
+
+<p>If I want the list to be sorted in descending order then I can pass in the parameter <code class="highlighter-rouge">reverse=True</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">new_list</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+</code></pre></div></div>
+
+<p>If I have a list that mixed both numeric and string data types, then the .sort() method’s default functionality will not be enough to sort the list. Sorting mixed type lists is possible but is beyond the scope of this post.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mixed_type_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'three'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'two'</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s">'other'</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">mixed_type_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-46-b8f2120cb542&gt; in &lt;module&gt;
+      1 mixed_type_list = ['three', 1, 'two', 7, 'other', -5]
+----&gt; 2 mixed_type_list.sort()
+
+
+TypeError: '&lt;' not supported between instances of 'int' and 'str'
+</code></pre></div></div>
+
+<p>I <strong>can</strong> however sort lists that contain mixed <strong>numeric</strong> variable types like ints and floats.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ints_and_floats</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">ints_and_floats</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">ints_and_floats</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[-10, 0.5, 2, 3.14, 6, 12]
+</code></pre></div></div>
+
+<h2 id="count-the-number-of-instances-of-a-particular-item-in-a-list">Count the number of instances of a particular item in a list</h2>
+
+<p>I can count how many times a particular item occurs in a list by using the <code class="highlighter-rouge">count()</code> function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">repetitive_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span><span class="s">' cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">repetitive_list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'cat'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">repetitive_list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'dog'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<h2 id="get-the-length-of-a-list-number-of-items-in-the-list">Get the length of a list (number of items in the list)</h2>
+
+<p>I can see how long a list is (how many items are in the list by using the <code class="highlighter-rouge">len()</code> function. However, the <code class="highlighter-rouge">len()</code> function is not a method that is specific to python lists, but comes default with the python library and can be used to find the lengths of other Python containers as well. Because of this, we won’t run this function by usint “dot syntax” on the end of our list variable (like we have been doing for most of the examples in this post), but we will just call the function like normal and pass our container variable (our list variable) into the function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">len</span><span class="p">(</span><span class="n">repetitive_list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+</code></pre></div></div>
+
+<p>There are a few other list methods that we haven’t covered here, and the true power of lists isn’t as apparent until we combine them with other topics like if statements (conditionals and for loops, so we will definitely be revisiting lists once we have given an overview of some of those other topics.</p>
+
+		
+	</div>
+</article>
+
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer class="footer">
+	<span><a href="/">LambdaChops.com</a></span>
+	<ul class="footer-social">
+		<li><a href="https://twitter.com/ryanallred"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/ryan-allred-2150bb13/"><i class="fa fa-linkedin-square"></i></a></li>
+		<li><a href="http://lambdachops.com/atom.xml"><i class="fa fa-rss-square"></i></a></li>
+		<li><a href="http://github.com/ryanleeallred"><i class="fa fa-github-square"></i></a></li>
+	</ul>
+</footer>
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>
