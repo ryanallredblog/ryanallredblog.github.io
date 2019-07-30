@@ -4,12 +4,32 @@
  <title>Lambda Chops - Data Science Tutorials</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2019-06-18T17:05:32-06:00</updated>
+ <updated>2019-06-27T16:07:31-06:00</updated>
  <author>
    <name>Ryan Allred</name>
    <uri>http://ryanleeallred.com</uri>
    <email></email>
  </author>
+
+ 
+
+ <entry>
+   <title>Python Lists and List Methods</title>
+   <link href="http://localhost:4000/python-lists-and-list-methods"/>
+   <id>http://localhost:4000/python-lists-and-list-methods</id>
+   <updated>2019-06-20T00:00:00-06:00</updated>
+   <content type="html">&lt;p&gt;In previous posts we have talked about three specific variable types: Integers, Floats and Strings. In this post we will introduce &lt;code class=&quot;highlighter-rouge&quot;&gt;Lists&lt;/code&gt;. A list is an ordered container that can hold multiple pieces of information.&lt;/p&gt; &lt;h2 id=&quot;an-example-list-to-work-with&quot;&gt;An example list to work with:&lt;/h2&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Math with Python</title>
+   <link href="http://localhost:4000/math-with-python"/>
+   <id>http://localhost:4000/math-with-python</id>
+   <updated>2019-06-19T00:00:00-06:00</updated>
+   <content type="html">&lt;p&gt;Python is an excellent language choice for doing math calculations. This is why popular scientific computing libraries such as NumPy and SciPy are written in Python. However, there’s a lot you can do with the Python Standard Library. Lets look at some of the basic mathematical operators that exist in...</content>
+ </entry>
 
  
 

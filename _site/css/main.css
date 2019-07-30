@@ -672,8 +672,29 @@ footer {
 
 /* Literal.Number.Integer.Long */
 /*- Custom style -*/
-#header h1 {
-  font-family: 'Source Sans Pro', sans-serif; }
+#menu {
+  background-color: white; }
+  #menu:before {
+    background-color: white; }
+  #menu:after {
+    background-color: white; }
+
+#header {
+  background-color: #1273bc;
+  margin-bottom: 30px; }
+  #header h1 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif; }
+  #header #mc_embed_signup {
+    background-color: transparent; }
+    #header #mc_embed_signup label {
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #header #mc_embed_signup .button {
+      background-color: black; }
+
+#header:after {
+  display: none; }
 
 #container {
   margin-bottom: 100px;

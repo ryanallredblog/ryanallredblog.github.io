@@ -2,9 +2,48 @@
 
 // -- Put custom style under this point -- //
 
+#menu {
+		background-color: white;
 
-#header h1 {
-	font-family: 'Source Sans Pro', sans-serif;
+		&:before {
+       		background-color: white;
+    	}
+
+	    &:after {
+	        background-color: white;
+	    }
+	}
+
+
+
+#header {
+
+	background-color: #1273bc;
+	margin-bottom: 30px;
+
+	h1 {
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	#mc_embed_signup {
+		background-color: transparent;
+
+		label {
+			color: white;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		.button {
+			background-color: black;
+		}
+	}
+}
+
+#header {
+	&:after {
+		display: none;
+	}
 }
 
 #container {
