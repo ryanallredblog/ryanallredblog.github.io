@@ -21,11 +21,8 @@ Lets try and scrape this table and get it into a dataframe:
 | 5      | Nicole Hoffman  | Data Science Curriculum Developer | fakeemail6@gmail.com | [Nicole Hoffman LinkedIn](https://www.linkedin.com/in/nwhoffman2016/) |
 
 <br>
-<br>
 
 <p>I think it's also really important to practice scraping links, because sometimes the things that you'll have multiple nested pages of content that you'll need to scrape, so maybe you'll need to follow a whole bunch of links.</p>
-
-<br>
 
 <h2 class="section">Social Media List:</h2>
 <ul id='social-media-list'>
